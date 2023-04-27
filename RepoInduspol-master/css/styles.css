@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+.titlepages {
+  background-image: url(../img/fotoPortada.png);
+  background-size: cover;
+  padding: 40px;
+  margin-top: 0%;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #E4E3E3;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: #8697a7 solid 5px; }
+
+.redtitle {
+  color: #ba181b; }
+
+/*....................PAGES: GALERIA....................*/
+.chico {
+  margin: 10px;
+  margin-top: 5px; }
+
+div .carta {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  div .carta .carta {
+    margin: 30px;
+    margin-bottom: 15px;
+    padding-top: 10px; }
+  div .carta .cardTitle {
+    padding: 15px; }
+
+/*....................PAGES: EMPRESA....................*/
+.infoEmpresa {
+  display: flex;
+  flex-direction: column; }
+  .infoEmpresa .empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; }
+    .infoEmpresa .empresa .portadaEmpresa {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .infoEmpresa .empresa .portadaEmpresa .title_empresa {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: xx-large;
+        margin-left: 20px; }
+    .infoEmpresa .empresa .parrafo_empresa {
+      margin: 10px;
+      padding: 10px;
+      font-weight: 500;
+      text-align: justify;
+      line-height: 26px; }
+    .infoEmpresa .empresa .fotoempresa {
+      border: 5px solid #8697a7;
+      margin-left: 20px;
+      max-width: 30vh;
+      max-height: auto; }
+    .infoEmpresa .empresa .empresaEsquema {
+      flex-direction: column;
+      min-width: 90%;
+      margin: 15px;
+      padding: 10px;
+      border: #8697a7 solid 2px;
+      text-align: center; }
+
+/*....................PAGES: PRODUCTOS....................*/
+.infoProductos {
+  flex-direction: column; }
+  .infoProductos .carrusel {
+    max-width: 500px;
+    margin: 0% auto;
+    margin-bottom: 30px;
+    border: solid #161A1D 2px;
+    padding: 50px; }
+  .infoProductos .parrafo_empresa {
+    text-align: center;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 26px; }
+  .infoProductos .parrafoEmpresa {
+    text-align: center;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px; }
+
+/*....................PAGES: CONTACTOS....................*/
+.subtitleContactos {
+  font-size: x-large;
+  padding: 30px;
+  margin-left: 25px; }
+
+.footerForm {
+  display: flex;
+  justify-content: center; }
+
+.radio {
+  margin-left: 10px; }
+
+.input {
+  margin-left: 30px; }
+
+div .col-12 {
+  margin-bottom: 50px;
+  justify-content: center; }
+
+.textarea {
+  margin: 20px; }
+
+.botonForm {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*...................ESTRUCTURA........................*/
+.grilla {
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer" "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  height: 100vh; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main;
+  flex-wrap: wrap; }
+
+footer {
+  grid-area: footer; }
+
+.grilla {
+  flex-direction: column; }
+
+body {
+  background-color: #E4E3E3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 16px;
+  object-fit: cover; }
+
+/*....................BUTTONS...........................*/
+.boton {
+  width: 180px;
+  padding: 20px;
+  background-color: #ba181b;
+  box-shadow: 5px 5px 10px;
+  margin: 1em;
+  text-align: center;
+  margin: 40px; }
+  .boton a {
+    color: #E4E3E3;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; }
+
+.boton:hover {
+  background-color: #161A1D;
+  transition: all .6s; }
+
+/*.........................HEADER...........................*/
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 4px solid #8697a7;
+  background-color: #161A1D;
+  margin-bottom: 0%; }
+  .header .header__logo {
+    width: 100px;
+    height: auto;
+    margin-left: 7%;
+    margin: 5px; }
+  .header li a {
+    color: #E4E3E3;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 15px; }
+  .header .formNav {
+    padding: 30px;
+    margin: 0%; }
+
+/* ...............MAIN.................... */
+.mainIndex {
+  background-image: url(../img/fotoPortada.png);
+  background-size: cover;
+  background-max-width: 100%;
+  background-margin-top: 0%;
+  border-bottom: #8697a7 solid 4px; }
+  .mainIndex .titleCoverpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%; }
+    .mainIndex .titleCoverpage .mainTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0% auto; }
+      .mainIndex .titleCoverpage .mainTitle .title {
+        white-space: pre-line;
+        text-align: center;
+        color: #E4E3E3;
+        margin-top: 50px;
+        font-weight: 400; }
+      .mainIndex .titleCoverpage .mainTitle .subtitle {
+        margin-top: 10px;
+        text-align: center;
+        margin: 40px;
+        text-transform: lowercase;
+        font-weight: 200;
+        color: #E4E3E3; }
+
+/* ....................FOOTER.................... */
+footer {
+  padding: 10px;
+  margin: 5px; }
+  footer .mapRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer .mapRedes .map {
+      padding: 20px;
+      text-align: center;
+      background-color: #ddc591;
+      border-radius: 10px;
+      border: solid 2px #ba181b;
+      display: flex;
+      flex-direction: column;
+      white-space: pre-line;
+      margin: 30px; }
+      footer .mapRedes .map .mapGoogle {
+        margin: 0% auto; }
+    footer .mapRedes .redes {
+      width: 15rem;
+      padding: 10px;
+      text-align: center;
+      margin: auto 0%;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      background-color: #ddc591;
+      border: solid 2px #ba181b; }
+  footer .section__anchors {
+    flex-wrap: wrap;
+    padding: 15px;
+    text-align: center;
+    background-color: #ba181b;
+    border-top: 2px solid #8697a7; }
+  footer .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #E4E3E3;
+    border-top: 4px solid #8697a7;
+    text-align: left;
+    padding-top: 10px;
+    background-color: #161A1D;
+    font-weight: 200;
+    align-items: center; }
+  footer .footer__link {
+    text-decoration: none;
+    color: #E4E3E3;
+    padding: 30px;
+    margin: 40px; }
+  footer .mapTitle {
+    padding-bottom: 20px;
+    color: #ba181b; }
+  footer .redtitle {
+    color: #ba181b; }
+  footer .redes__logo {
+    margin: 20px;
+    height: 30px; }
+  footer .footerLogo {
+    width: 100px;
+    height: auto;
+    margin-left: 7%;
+    margin: 5px; }
+
+/*................MEDIAS QUERIES.........................*/
+@media screen and (min-width: 768px) {
+  div .mapRedes {
+    align-content: center;
+    margin-bottom: 30px;
+    margin-top: 10px; }
+    div .mapRedes .redes {
+      margin-top: 15px;
+      padding: 30px;
+      margin: auto 0%;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+  .map {
+    padding: 40px; }
+  .section__anchors {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; } }

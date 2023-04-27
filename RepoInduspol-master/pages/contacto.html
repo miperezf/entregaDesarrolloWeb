@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dejanos tu consulta y comunicate con nosotros" />
+    <meta name="keywords" content="INDUSPOL SRL, contacto, consulta, formulario" />
+    <title>Contacto - Comunicate con nosotros y dejanos tu consulta</title>
+    <link rel="shortcut icon" href="../Icons/favicon-16x16.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css" />
+
+</head>
+
+<body>
+    <div class="grilla flex">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark" id="nav">
+                <div class="container-fluid">
+                    <a href="../index.html"><img src="../img/logo.png" alt="logo" class="header__logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <input type="text" name="buscar" id="buscar">
+                            <input type="submit" name="" value="buscar" id="" class="btn btn-outline-warning">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="titlepages container-fluid flex">
+                <h2>Contacto</h2>
+            </div>
+
+            <h5 class="subtitleContactos">Dejanos tu consulta</h5>
+
+
+            <div class="container">
+                <form class="row g-3">
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationDefault01" value="Nombre" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationDefault02" value="Apellido" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault01" class="form-label">Número de teléfono</label>
+                        <input type="number" class="form-control" id="validationDefault01" value="Teléfono" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefaultUsername" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                            <input type="text" class="form-control" id="validationDefaultUsername"
+                                aria-describedby="inputGroupPrepend2" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault03" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Codigo Postal</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault04" class="form-label">Selecciona el producto para tu
+                            consulta</label>
+                        <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled  value="bolsapolietilenobaja">Bolsa Polietileno Baja
+                                Densidad</option>
+                            <option value="bolsapolietilenoalta">Bolsa Polietileno Alta Densidad</option>
+                            <option value="bolsacamiseta">Bolsa Camiseta</option>
+                            <option value="bolsariñon">Bolsa Riñon</option>
+                            <option value="laminabaja">Lamina de Polietileno Baja Densidad</option>
+                            <option value="laminaañta">Lamina de Polietileno ALta Densidad</option>
+                        </select>
+                    </div>
+
+                    <div class="formUno">
+                        <input type="reset" value="Limpiar formulario" class="btn btn-warning" />
+                    </div>
+
+                    <div class="form-check form-check-inline radio">
+                        <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioDefault">
+                        <label class="form-check-label" for="inlineRadioDefault">He adquirido productos de
+                            Induspol.</label>
+                    </div>
+                    <div class="form-check form-check-inline radio">
+                        <input class="form-check-input" type="radio" name="radioInline" id="inlineRadioChecked"
+                            checked="">
+                        <label class="form-check-label" for="inlineRadioChecked">NUNCA he adquirido productos de
+                            Induspol.</label>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Acepto suscribirme al newsletter
+                            </label>
+                        </div>
+                        <div class="form-floating textarea">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea">Escriba aquí su consulta</label>
+                        </div>
+
+                    </div>
+                    <div class="col-12 botonForm">
+                        <button class="btn btn-danger" type="submit">Enviar Formulario</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="footerForm container">
+                <div>
+                    <img src="../img/contacto.jpg" alt="">
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <div class="mapRedes">
+                <div class="map">
+                    <h3 class="mapTitle">Visitanos personalmente</h3>
+                    <p>Provincias Unidas 1381 (Rosario, Pcia. Santa Fe, Argentina)</p>
+                    <p>Días y horarios de atención:
+
+                        Lunes a Viernes de 8 a 17 hs.</p>
+                    <a href="https://www.google.com/maps/place/Av.+Provincias+Unidas+1381,+S2008+Rosario,+Santa+Fe/@-32.9444471,-60.7143432,17z/data=!3m1!4b1!4m5!3m4!1s0x95b7acd250f92a67:0xa5c233496530551f!8m2!3d-32.9444471!4d-60.7121545"
+                        target="blank">
+                        <img class="redes__logo" alt="icono mapa" src="../Icons/map.png" /></a>
+                </div>
+
+
+                <div class="redes">
+                    <h3 class="mapTitle">Seguinos en nuestras redes</h3>
+                    <a href="https://www.facebook.com/induspolrosario" target="blank">
+                        <img class="redes__logo" src="../Icons/face.png" alt="facebook induspol" />
+                    </a>
+                    <a href="https://www.instagram.com/induspolsrl/" target="blank">
+                        <img class="redes__logo" src="../Icons/insta.png" alt="instagram induspol" />
+                    </a>
+                </div>
+            </div>
+
+
+            <section class="section__anchors">
+                <div>
+                    <a class="footer__link" href="#nav">Volver arriba</a>
+                    <a class="footer__link" href="../pages/galeria.html">Galería</a>
+                    <a class="footer__link" href="../pages/empresa.html">Empresa</a>
+                    <a class="footer__link" href="../pages/productos.html">Productos</a>
+                    <a class="footer__link" href="../pages/contacto.html">Contacto</a>
+                </div>
+            </section>
+
+            <section class="footerInfo">
+                <div>
+                    <p>Induspol Srl</p>
+                    <p>Tel.: (0341) 4564900</p>
+                    <p>Whatsapp: (0341) 155002008</p>
+                    <p>contacto@induspolsrl.com.ar</p>
+                    <p>ventas@induspolsrl.com.ar </p>
+
+                </div>
+
+                <div>
+                    <a href="../index.html"><img src="../img/logo.png" alt="logo" class="footerLogo"></a>
+                </div>
+            </section>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

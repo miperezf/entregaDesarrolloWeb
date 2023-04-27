@@ -1,0 +1,170 @@
+@import "colores";
+@import "breakpoints";
+@import "mixins";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.titlepages {
+    background: {
+        image: url(../img/fotoPortada.png);
+        size: cover;
+    }
+
+    
+    padding: 40px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $col-ter;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: $col-cua solid 5px;
+}
+
+.redtitle {
+    color: $col-pri;
+}
+
+/*....................PAGES: GALERIA....................*/
+
+.chico {
+    margin: 10px;
+    margin-top: 5px;
+}
+
+div .carta {
+    @include flex(space-evenly, center);
+
+    .carta {
+        margin: 30px;
+        margin-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    .cardTitle{
+        padding: 15px;
+    }
+}
+
+/*....................PAGES: EMPRESA....................*/
+
+.infoEmpresa {
+    display: flex;
+    flex-direction: column;
+
+    .empresa {
+        @include flexColumn;
+        flex-wrap: wrap;
+
+        .portadaEmpresa {
+            @include flexColumn;
+
+            .title_empresa {
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: xx-large;
+                margin-left: 20px;
+            }
+        }
+
+        .parrafo_empresa {
+            margin: 10px;
+            padding: 10px;
+            font-weight: 500;
+            text-align: justify;
+            line-height: 26px;
+        }
+
+        .fotoempresa {
+            border: 5px solid $col-cua;
+            margin-left: 20px;
+            max-width: 30vh;
+            max-height: auto;
+        }
+
+        .empresaEsquema {
+            flex-direction: column;
+            min-width: 90%;
+            margin: 15px;
+            padding: 10px;
+            border: $col-cua solid 2px;
+            text-align: center;
+            
+        }
+    }
+
+}
+
+/*....................PAGES: PRODUCTOS....................*/
+
+.infoProductos {
+    flex-direction: column;
+
+    .carrusel {
+        max-width: 500px;
+        margin: 0% auto;
+        margin-bottom: 30px;
+        border: solid $col-sec 2px;
+        padding: 50px;
+    }
+
+    .parrafo_empresa {
+        text-align: center;
+        text-align: justify;
+        margin: 10px;
+        padding: 10px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .parrafoEmpresa {
+        text-align: center;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+/*....................PAGES: CONTACTOS....................*/
+
+.subtitleContactos {
+    font-size: x-large;
+    padding: 30px;
+    margin-left: 25px;
+}
+
+.footerForm {
+    display: flex ;
+    justify-content: center;
+}
+
+.radio {
+    margin-left: 10px;
+}
+
+.input {
+    margin-left: 30px;
+}
+
+div .col-12 {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.textarea {
+    margin: 20px;
+}
+
+.botonForm{
+    @include flex (center, center);
+}

@@ -1,0 +1,274 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@import "pages";
+@import "colores";
+@import "breakpoints";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200;1,500&display=swap');
+
+
+/*...................ESTRUCTURA........................*/
+
+.grilla {
+    display: grid;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer"
+        "footer footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    flex-wrap: wrap;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.grilla {
+    flex-direction: column;
+}
+
+body {
+    background-color: $col-ter;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/*....................BUTTONS...........................*/
+
+.boton {
+    width: 180px;
+    padding: 20px;
+    background-color: $col-pri;
+    box-shadow: 5px 5px 10px;
+    margin: 1em;
+    text-align: center;
+    margin: 40px;
+
+    a {
+        color: $col-ter;
+        text-transform: uppercase;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+
+.boton:hover {
+    background-color: $col-sec;
+    transition: all .6s;
+}
+
+/*.........................HEADER...........................*/
+
+.header {
+    @include flex(space-evenly, center);
+    border-bottom: 4px solid $col-cua;
+    background-color: $col-sec;
+    margin-bottom: 0%;
+
+
+    .header__logo {
+        width: 100px;
+        height: auto;
+        margin-left: 7%;
+        margin: 5px;
+    }
+
+    li a {
+        color: $col-ter;
+        text-transform: uppercase;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .formNav {
+        padding: 30px;
+        margin: 0%;
+    }
+}
+
+/* ...............MAIN.................... */
+
+.mainIndex {
+    background: {
+        image: url(../img/fotoPortada.png);
+        size: cover;
+        max-width: 100%;
+        margin-top: 0%;
+    }
+
+    border-bottom: $col-cua solid 4px;
+
+    .titleCoverpage {
+        @include flexColumn;
+        margin-top: 0%;
+
+        .mainTitle {
+            @include flexColumn;
+            margin: 0% auto;
+
+            .title {
+                white-space: pre-line;
+                text-align: center;
+                color: $col-ter;
+                margin-top: 50px;
+                font-weight: 400;
+
+            }
+
+            .subtitle {
+                margin-top: 10px;
+                text-align: center;
+                margin: 40px;
+                text-transform: lowercase;
+                font-weight: 200;
+                color: $col-ter;
+            }
+        }
+    }
+
+}
+
+/* ....................FOOTER.................... */
+
+footer {
+    padding: 10px;
+    margin: 5px;
+
+    .mapRedes {
+        @include flexColumn;
+
+        .map {
+            padding: 20px;
+            text-align: center;
+            background-color: $col-qui;
+            border-radius: 10px;
+            border: solid 2px $col-pri;
+            display: flex;
+            flex-direction: column;
+            white-space: pre-line;
+            margin: 30px;
+
+            .mapGoogle {
+                margin: 0% auto;
+            }
+        }
+
+        .redes {
+            width: 15rem;
+            padding: 10px;
+            text-align: center;
+            margin: auto 0%;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            background-color: $col-qui;
+            border: solid 2px $col-pri;
+
+        }
+
+    }
+
+    .section__anchors {
+        flex-wrap: wrap;
+        padding: 15px;
+        text-align: center;
+        background-color: $col-pri;
+        border-top: 2px solid $col-cua;
+
+    }
+
+    .footerInfo {
+        @include flex(space-around, center);
+        color: $col-ter;
+        border-top: 4px solid $col-cua;
+        text-align: left;
+        padding-top: 10px;
+        background-color: $col-sec;
+        font-weight: 200;
+        align-items: center;
+    }
+
+    .footer__link {
+        text-decoration: none;
+        color: $col-ter;
+        padding: 30px;
+        margin: 40px;
+    }
+
+    .mapTitle {
+        padding-bottom: 20px;
+        color: $col-pri;
+
+    }
+
+    .redtitle {
+        color: $col-pri;
+    }
+
+    .redes__logo {
+        margin: 20px;
+        height: 30px;
+    }
+
+    .footerLogo {
+        width: 100px;
+        height: auto;
+        margin-left: 7%;
+        margin: 5px;
+    }
+}
+
+/*................MEDIAS QUERIES.........................*/
+
+
+@media screen and (min-width:$md) {
+    div .mapRedes {
+        align-content: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
+
+        .redes {
+            margin-top: 15px;
+            padding: 30px;
+            margin: auto 0%;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .map {
+        padding: 40px;
+    }
+
+
+    .section__anchors {
+        @include flex(space-evenly, center);
+    }
+
+}
